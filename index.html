@@ -1,68 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR de Cristo Portezuelo</title>
 </head>
+
 <body>
 
     <style>
-        body{
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
             background-color: #f7f7f7;
+            background-image: url('f3.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
         }
 
-        h1{
-            text-align: center;
+        .content-wrapper {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h2{
-            text-align: center;  
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px;
+            height: auto;
         }
 
-        h3{
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 15px;
-        }
-
-        p{
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size: 20px;
-            color: blue;
-        }
         img {
             max-width: 100%;
             height: auto;
         }
 
+        @media (max-width: 600px) {
+            .logo-container {
+                width: 60px;
+            }
+        }
+
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.1em;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        @media (min-width: 768px) {
+            .image-container {
+                max-width: 80%;
+                margin: 20px auto;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .image-container {
+                max-width: 70%;
+            }
+        }
+
+        .image-container:hover img {
+            transform: scale(1.05);
+        }
+
+        .cta-button {
+            display: block;
+            width: 80%;
+            max-width: 300px;
+            margin: 30px auto;
+            padding: 15px;
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #2980b9;
+        }
     </style>
 
-    <h1> Cristo Del Portezuelo</h1> 
-    <h3> Descripcion</h3>
-    <h3>El Cristo del Portezuelo es una escultura de Cristo, de 16 metros de altura ubicado en la ciudad de Chilecito. La obra realizada por el artista Alejandro Carrizo, tiene como objetivo resguardar y respaldar la fe cristiana en toda la provincia.
-        Tiene una base de 8 x 8 metros para sostener dicha estructura y los brazos tienen más de 6 metros de largo cada uno.
-        En homenaje al Bicentenario de la Patria, 200 peldaños separan la base del Cristo que, con sus manos extendidas, invita a los devotos a ascender para fortalecer su fe. Estos peldaños están divididos en explanadas que dan lugar a un merecido descanso, mientras se disfruta de los jardines de cactus y el arte rupestre a lo largo del ascenso.
-        Lo más recomendable es subir durante el atardecer, tanto por las imágenes como por el esfuerzo de remontar esos escalones.
+    <h1> Cristo Del Portezuelo</h1>
+    <h3>El Cristo del Portezuelo es una escultura de Cristo, de 16 metros de altura ubicado en la ciudad de Chilecito.
+        La obra realizada por el artista Alejandro Carrizo, tiene como objetivo resguardar y respaldar la fe cristiana
+        en toda la provincia.
+        Tiene una base de 8 x 8 metros para sostener dicha estructura y los brazos tienen más de 6 metros de largo cada
+        uno.
+        En homenaje al Bicentenario de la Patria, 200 peldaños separan la base del Cristo que, con sus manos extendidas,
+        invita a los devotos a ascender para fortalecer su fe. Estos peldaños están divididos en explanadas que dan
+        lugar a un merecido descanso, mientras se disfruta de los jardines de cactus y el arte rupestre a lo largo del
+        ascenso.
+        Lo más recomendable es subir durante el atardecer, tanto por las imágenes como por el esfuerzo de remontar esos
+        escalones.
     </h3>
 
-    <h3>Al pie de la escalinata hay una confitería que invita a relajarse después del esfuerzo de subir y bajar, y si bien el Cristo se ve durante todo el día desde casi todas partes de la ciudad, por las noches es un espectáculo aparte ya que se ilumina y sus colores van cambiando a medida que avanza la noche.
-        La imagen se completa con una fuente magnífica de aguas danzantes, una posta de información turística, sanitarios públicos, y una confitería.
-        Además, todo el predio esta ornamentado con símbolos y signos diaguitas, en representación de las culturas originarias.
-    </h3>
+    <div style="text-align: center;"></div>
+    <img src="imagenCristo.jpg">
+    </div>
 
-    <h3>El Cristo del Portezuelo puede ser divisado a varios kilómetros de distancia dando al cotidiano paisaje de Chilecito una esplendor inigualable.
-        Y si bien, se ve durante todo el día desde casi todas partes de la ciudad, por las noches es un espectáculo aparte ya que se ilumina y sus colores van cambiando a medida que avanza la noche.
-        Es una identificación inconfundible, a la hora de mostrar en imágenes la ciudad, ostentando como un sueño identificatorio, del mismo modo en que lo hace Rio de Janeiro con su famoso Cristo Redentor.
+    <h3>Al pie de la escalinata hay una confitería que invita a relajarse después del esfuerzo de subir y bajar, y si
+        bien el Cristo se ve durante todo el día desde casi todas partes de la ciudad, por las noches es un espectáculo
+        aparte ya que se ilumina y sus colores van cambiando a medida que avanza la noche.
+        La imagen se completa con una fuente magnífica de aguas danzantes, una posta de información turística,
+        sanitarios públicos, y una confitería.
+        Además, todo el predio esta ornamentado con símbolos y signos diaguitas, en representación de las culturas
+        originarias.
     </h3>
-    
-    <p><a href="https://www.google.com/maps/dir/?api=1&destination=-29.16695069,-67.48593211">¿Como llegar al Cristo?</a></p>
-    <br>
 
     <div style="text-align: center;">
-        <img src="imagenCristo.jpg">
         <img src="Cristo.png">
+    </div>
+
+    <h3>El Cristo del Portezuelo puede ser divisado a varios kilómetros de distancia dando al cotidiano paisaje de
+        Chilecito una esplendor inigualable.
+        Y si bien, se ve durante todo el día desde casi todas partes de la ciudad, por las noches es un espectáculo
+        aparte ya que se ilumina y sus colores van cambiando a medida que avanza la noche.
+        Es una identificación inconfundible, a la hora de mostrar en imágenes la ciudad, ostentando como un sueño
+        identificatorio, del mismo modo en que lo hace Rio de Janeiro con su famoso Cristo Redentor.
+    </h3>
+
+    <div style="text-align: center;">
         <img src="FOTO CRISTO PORTEZUELO LLENO DE GENTE INAUGURACIÓN.jpg">
     </div>
-    
+
+    <p><a href="https://www.google.com/maps/dir/?api=1&destination=-29.16695069,-67.48593211" class="cta-button">¿Como
+            llegar al Cristo?</a></p>
+
+
 </body>
+
 </html>
