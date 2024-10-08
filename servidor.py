@@ -20,7 +20,7 @@ class ComentarioHandler(BaseHTTPRequestHandler):
             # Insertar el comentario en la colección 'lugar'
             if comentario:
                 collection_lugares.update_one(
-                    {'nombre': 'Estacion'},  # Actualiza este criterio según cómo se almacenen los lugares
+                    {'nombre': 'Cristo'},  # Actualiza este criterio según cómo se almacenen los lugares
                     {'$push': {'comentarios': comentario}}
                 )
                 self.send_response(200)
